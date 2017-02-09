@@ -1,6 +1,2 @@
-node{
-    git env.spl
-    def spl = load 'pipeline.groovy'
-
-    spl.runPipeline()
-}
+def pipeline = load 'Pipeline.groovy'
+pipeline.setNode()

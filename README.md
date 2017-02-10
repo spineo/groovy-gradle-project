@@ -17,6 +17,10 @@
 * gradle help
 * gradle init --type groovy-library (gradle help --task init show other targets)
 
+### Git Repo
+
+* Set up feature branches to test the Jenkins Multibranch projects
+
 ### References
 
 https://docs.gradle.org/current/userguide/installation.html

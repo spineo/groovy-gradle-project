@@ -1,0 +1,3 @@
+[submodule "jenkinsfile"]
+	path = jenkinsfile
+	url = https://github.com/spineo/jenkinsfile.git

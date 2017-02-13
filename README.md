@@ -30,12 +30,13 @@ the gradle repo and submodule jenkinsfile repo clone.
 * git clone gradle-repo gradle-dir
 * cd gradle-dir
 * git submodule add jenkinsfile-repo
+* ln -s ../Jenkinsfile .
 * git add \*; git commit; git push origin branch
 
-To clone the submodule repo
+To clone the gradle and jenkinsfile submodule repo
 
-* git clone --recurse-submodules gradle-repo
-* cd gradle-dir/jenkinfile && git pull origin master (if Jenkinsfile updated)
+* git clone --recurse-submodules gradle-repo gradle-dir
+* cd gradle-dir/jenkinfile && git pull origin master (if Jenkinsfile needs updated)
 
 See _git submodule help_ for full commands 
 

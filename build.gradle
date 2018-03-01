@@ -25,3 +25,18 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
+task tarBuild(type: Tar) {
+    archiveName = 'build.tar.gz'
+    into ('/'){
+       from 'build/libs'
+       include '*'
+    }
+    into ('/'){
+       from 'build/reports'
+       include '**/*'
+    }
+
+    destinationDir  file('build/tar')
+    extension 'tar.gz'
+    compression = Compression.GZIP
+}
